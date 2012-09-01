@@ -20,6 +20,16 @@ currency_RUB:
         delimiter: " "
         precision: 2
 
+currency_UAH:
+  number:
+    currency:
+      format:
+        format: "%n %u"
+        unit: "грн."
+        separator: "."
+        delimiter: " "
+        precision: 2
+
 currency_EUR:
   <<: *usd
   number:
@@ -27,6 +37,16 @@ currency_EUR:
       format:
         format: "%u%n"
         unit: "€"
+        separator: ","
+        delimiter: "."
+
+currency_TRY:
+  <<: *usd
+  number:
+    currency:
+      format:
+        format: "%u%n"
+        unit: "TL"
         separator: ","
         delimiter: "."
 
