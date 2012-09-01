@@ -45,7 +45,7 @@ currency_TRY:
   number:
     currency:
       format:
-        format: "%u%n"
+        format: "%n %u"
         unit: "TL"
         separator: ","
         delimiter: "."
